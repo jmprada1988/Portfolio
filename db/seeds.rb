@@ -12,8 +12,8 @@ puts "10 blog post created"
 		title: "Portfolio title #{portfolio_item}",
 		subtitle: "My fantastic Service",
 		body: "fireworks factory ha ha! and all who dwell within this rocket house fireworks factory liberty log perspicacity avoision knowitallism banana kaboom such a violent motif homersexual poochie hate mail killbot factory undefinedposturologists bathiola smendler here's vanessa williams nucleon nincompoop zuh eat my shirt scratchtasia shark boy dorkus molorkus kapowza menu boy 0 days without a suicide she. u.i. perspicacity the e-z road to success the nauseator jiminy jillikers ketchup eat our shirts your older, balder, fatter son meh quetzalzacatenango menu boy learnatorium the cause of and solution to all of life's problems. posturologists scientician eedily one way passage to the boneyard suspicious aloysius microcalifragilistics ketchup unpossible gangsta city flanswered four minutes. dickety milhousing suck like a fox unnecessary surgery land nincompoop suck like a fox municipal house of pancakes 0 days without a suicide sunblocker onetuplet the nauseator skanks for nothing science pole ",
-		main_image: "https://via.placeholder.com/600x200",
-		thumb_image: "https://via.placeholder.com/350x200"
+		main_image: "https://via.placeholder.com/500?text=Placeholder.com+rocks!",
+		thumb_image: "https://via.placeholder.com/300?text=Placeholder.com+rocks!"
 		)
 	end
 
