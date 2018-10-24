@@ -1,7 +1,29 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+10.times do |blog|
+	Blog.create!(
+		title: "My blog post #{blog}",
+		body: "Lorem Simpson perfectly cromulent homerhol foundling-a-ding commie-nazis smashy smashy clouseauesque lamarella lupper dumbening unnecessary surgery land chocotastic the old wiggum charm the nauseator d'oh! please let me explain baby guts that's why your robot never worked pinnitchy-o brassafrax texas left add more balls lamarella jumping box the old fork in the eye no-breath tromboner scientician searing gas pain land unblowuppable totally outrageous paradigm i need the biggest seed bell you have suck shack velocitator woozle wuzzle a law requiring ducks to wear long pants continuing our 'sign of evil' countdown fudrucker pointy kitty esquilax eat my shorts you are hearing me talk meh cheese-eating surrender monkeys okely dokely crisitunity bumbled-bee foodrinkery reverse vampires blubber-in-law diddily unfaceuptoable commie-nazis banana kaboom no-breath eedily successmanship lord protect this rocket house avoision pasghetti squozen i had to sell the trigger and most of the handle to feed my family my son is also named bort tromboner reverse vampires"
+		)
+end
+
+puts "10 blog post created"
+
+9.times do |portfolio_item|
+	Portfolio.create!(
+		title: "Portfolio title #{portfolio_item}",
+		subtitle: "My fantastic Service",
+		body: "fireworks factory ha ha! and all who dwell within this rocket house fireworks factory liberty log perspicacity avoision knowitallism banana kaboom such a violent motif homersexual poochie hate mail killbot factory undefinedposturologists bathiola smendler here's vanessa williams nucleon nincompoop zuh eat my shirt scratchtasia shark boy dorkus molorkus kapowza menu boy 0 days without a suicide she. u.i. perspicacity the e-z road to success the nauseator jiminy jillikers ketchup eat our shirts your older, balder, fatter son meh quetzalzacatenango menu boy learnatorium the cause of and solution to all of life's problems. posturologists scientician eedily one way passage to the boneyard suspicious aloysius microcalifragilistics ketchup unpossible gangsta city flanswered four minutes. dickety milhousing suck like a fox unnecessary surgery land nincompoop suck like a fox municipal house of pancakes 0 days without a suicide sunblocker onetuplet the nauseator skanks for nothing science pole ",
+		main_image: "https://via.placeholder.com/600x200",
+		thumb_image: "https://via.placeholder.com/350x200"
+		)
+	end
+
+puts "9 portfolios created"
+
+5.times do |skill|
+	Skill.create!(
+		title: "Rails #{skill}",
+		percent_utilized: 15
+		)
+	end 
+
+	puts "5 skills created"
