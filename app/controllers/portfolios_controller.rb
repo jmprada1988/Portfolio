@@ -57,8 +57,12 @@ end
   private
 
   def portfolio_params
-  	#do not forget validatins available
-    params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+  	#do not forget validations available
+    params.require(:portfolio).permit(:title, 
+                                      :subtitle, 
+                                      :body, 
+                                      technologies_attributes: [:name]
+                                      )
   end
 
 
