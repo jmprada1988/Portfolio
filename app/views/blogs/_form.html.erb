@@ -26,9 +26,7 @@
     <%= select(:topic, :title,
   Topic.all.collect { |t| [ t.title, t.id ] },
 { include_blank: true }) %>
-  </div>
-  
-  
+  </div>  
 
   <div class="actions">
     <%= form.submit %>
