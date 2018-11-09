@@ -3,11 +3,6 @@ class ApplicationController < ActionController::Base
     include DeviseWhitelist 
     include SetSource
     include CurrentUserConcern
-    include DefaultPageContent   
-    before_action :set_copyright
+    include DefaultPageContent       
     
-    
-    def set_copyright
-            @copyright = LeinViewTool::Renderer.copyright 'Lein Davir', 'All rights reserved'
-    end
 end
