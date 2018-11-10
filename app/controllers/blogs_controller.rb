@@ -69,7 +69,7 @@ class BlogsController < ApplicationController
     if @blog.draft?
       @blog.published!
     elsif @blog.published?
-      @blog.draft!
+      @blog.draft!  
     end
     redirect_to blogs_url, notice: 'Post staus has been updated.'
   end
@@ -82,6 +82,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :body, :topic_id)
     end
 end
