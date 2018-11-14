@@ -2,6 +2,12 @@
     <div class="container">
         <h1 class="blog-title">My personal blog</h1>
         <p class="lead blog-description">This blog was created with Bootstrapand custom css</p>
-        <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+        
+        <span>
+            <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+        </span>
+        <span>
+            <%= link_to 'Topics', topics_path %>
+        </span>
     </div>
 </header>

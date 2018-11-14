@@ -4,6 +4,13 @@
         <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
          Aenean lacinia bibendum nulla sed consectetur.</p>
     </div>
+     <div class="p-3">
+        <h4>Topics</h4>
+        <% @side_bar_topics.each do |topic| %>
+            <p><%= link_to topic.title, topic_path(topic)%> </p>
+        <% end %>
+     </div>
+
 
     <div class="p-3">
         <h4 class="font-italic">Socila Media</h4>
