@@ -18,6 +18,8 @@
 //= require html.sortable
 //= require cocoon
 //= require gritter
+//= require typed
+//= require typed-implemetation
 //= require activestorage
 //= require cable
 //= require turbolinks

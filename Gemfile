@@ -46,5 +46,4 @@ gem 'redis', '~> 4.0', '>= 4.0.3'
 gem 'gravtastic', '~> 3.2', '>= 3.2.6'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
-
 ruby "2.5.1"
