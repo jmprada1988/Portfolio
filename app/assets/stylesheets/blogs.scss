@@ -3,6 +3,12 @@
 @import "gritter";
 /* stylelint-disable selector-list-comma-newline-after */
 
+html,
+body {
+  height: 100%;
+  font-family: "Allura", cursive;
+}
+
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
@@ -17,13 +23,13 @@
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+h1 .h1,
+h2 .h2,
+h3 .h3,
+h4 .h4,
+h5 .h5,
+h6 .h6 {
+  font-family: "Allura", cursive;
 }
 
 .display-4 {
@@ -153,4 +159,8 @@ h6 {
 .comment-name {
   font-weight: 800;
   color: darkblue;
+}
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
 }
