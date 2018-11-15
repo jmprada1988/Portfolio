@@ -24,5 +24,6 @@ module DevcampPortfolio
     config.eager_load_paths << "#{Rails.root}/lib"
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
   end
 end
