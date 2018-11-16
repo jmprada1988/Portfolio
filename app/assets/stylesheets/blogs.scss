@@ -22,6 +22,20 @@ body {
 .blog-header-logo:hover {
   text-decoration: none;
 }
+.blog-header .container {
+  background-image: url("Hard-Drive-960px.gif");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  color: #000210;
+}
+.blog-header .container h1 {
+  color: #010731;
+  margin-left: 20%;
+}
+.blog-header .container p {
+  color: #010731;
+  font-weight: 700;
+}
 
 h1 .h1,
 h2 .h2,
