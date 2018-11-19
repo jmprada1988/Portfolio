@@ -10,6 +10,7 @@ class BlogsController < ApplicationController
     @blogs = Blog.recent.page(params[:page]).per(5)
     else
       @blogs = Blog.published.page(params[:page]).per(5)
+      @blog = Blog.includes(:comments).friendly.find(params[:id]) rescue nil
     end
     @page_title = "My Portfolio | Blog"
   end
@@ -17,7 +18,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    if logged_in?(:site_admin) || @blog.published?
+    if @blog.published? || logged_in?(:site_admin)
       @blog = Blog.includes(:comments).friendly.find(params[:id])
       @comment = Comment.new
 
