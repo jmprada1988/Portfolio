@@ -1,6 +1,6 @@
 <div class="col-md-4">
 	<div class="card mb-4 shadow-sm" data-id="<%= portfolio_item.id %>">
-		<p class="portfolio-container"><a href="<%= portfolio_show_path(portfolio_item)%>"><%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), width: '100%' %></a></p>
+		<p class="portfolio-container"><a href="<%= portfolio_show_path(portfolio_item)%>"><%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), width: '100%', height: 'auto' %></a></p>
 		<div class="card-body">
 			<p class="card-text"><span><%= link_to portfolio_item.title.upcase, portfolio_show_path(portfolio_item) %></span>
 			<%= portfolio_item.subtitle %>
