@@ -12,21 +12,22 @@
 
     <%= favicon_link_tag 'favicons/favicon.ico'%>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', 'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <%= video_tag(
-      'HardDriveH264.mp4',
+      'Typing_on_Keyboard.mov',
       id: 'background',
       autoplay: true,
       loop: true,
       muted: true,
       poster: 'Hard-Drive-960px.gif'
     ) %>
-      <%= render "shared/application_nav"%>
+      <%=render "shared/application_nav"%>
+      <%= render 'shared/new_nav' %>
       
       
       <%= yield %>
