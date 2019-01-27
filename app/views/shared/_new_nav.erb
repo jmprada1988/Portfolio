@@ -1,15 +1,9 @@
 <nav class="navigation">
     <input type="checkbox" id="group1" />
     <label for="group1">
-    <ul class="navigation__group first">        
-        <li class="navigation__group-link"><a href="#">Home</a></li>
-        <li class="navigation__group-link"><a href="#">About Me</a></li>
-        <li class="navigation__group-link"><a href="#">Contact</a></li>
-        <li class="navigation__group-link"><a href="#">Blog</a></li>
-        <li class="navigation__group-link"><a href="#">Portfolio</a></li>
-        <li class="navigation__group-link"><a href="#">Tech Feed</a></li>
-        <li class="navigation__group-link"><a href="#">Sign in</a></li>
-        <li class="navigation__group-link"><a href="#">Sign Up</a></li> 
+    <ul class="navigation__group first">
+        <li class="navigation__group-link"><a href="#"><%= nav_helper 'navigation__group-link', 'li' %> </a></li>
+        <li class="navigation__group-link"><a href="#"><%= login_helper 'navigation__group-link'%></a></li> 
     </ul>
     <span class="toggle">☰</span>
     </label>

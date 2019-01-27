@@ -1,9 +1,12 @@
-<header class="masthead mb-auto">
-    <div class="inner">
-        <h3 class="masthead-brand">Lein Davir</h3>
-        <nav class="nav nav-masthead app-nav">
-            <%= nav_helper 'nav-link', 'span' %>            
-             <%= login_helper 'nav-link'%>
-        </nav>
-    </div>
-</header>
+<nav class="navigation">
+    
+    <input type="checkbox" id="group1" />
+    <label for="group1">
+    <ul class="navigation__group first">
+        
+        <li class="navigation__group-link"><a href="/about-me">Lein Davir<%= nav_helper 'navigation__group-link', 'li' %> </a></li>
+        <li class="navigation__group-link"><a><%= login_helper 'navigation__group-link'%></a></li> 
+    </ul>
+    <span class="toggle">☰</span>
+    </label>
+</nav>

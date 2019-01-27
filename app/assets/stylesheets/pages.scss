@@ -1,7 +1,8 @@
 .navigation {
-    margin: 50px auto;
-    max-width: 100%;
-    width: 100%;
+    margin: 1rem auto;
+    min-width: 100%;
+    border-radius: 5%;
+
 }
 #group1, .toggle {
     display: none;
@@ -13,6 +14,7 @@
     height: 50px;
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
@@ -90,11 +92,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#434343', endColorstr='#030303',GradientType=1 ); /* IE6-9 */
   }
   
-  .first li a {
-    color: #fff;
-  }
+
   
   .first li a:hover {
-    background: #6d6268;
+    background: linear-gradient(to right, #8E0E00 0%, #1F1C18 100%);
+    color: #000;
+    height: 100%;
+    font-weight: 900;
   }
    
