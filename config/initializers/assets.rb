@@ -14,4 +14,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( blogs.css )
 Rails.application.config.assets.precompile += %w( portfolios.css )
 Rails.application.config.assets.precompile += %w( pages.css )
+Rails.application.config.assets.precompile += %w( normalize.css )
+Rails.application.config.assets.precompile += %w( navigation.css )
+Rails.application.config.assets.precompile += %w( navcomp.css )
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts")

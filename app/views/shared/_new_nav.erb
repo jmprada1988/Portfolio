@@ -1,10 +1,38 @@
-<nav class="navigation">
-    <input type="checkbox" id="group1" />
-    <label for="group1">
-    <ul class="navigation__group first">
-        <li class="navigation__group-link"><a href="#"><%= nav_helper 'navigation__group-link', 'li' %> </a></li>
-        <li class="navigation__group-link"><a href="#"><%= login_helper 'navigation__group-link'%></a></li> 
-    </ul>
-    <span class="toggle">☰</span>
-    </label>
-</nav>
+
+<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-download">About</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-illustrator">Contact</a></li>
+										<li><a class="gn-icon gn-icon-photoshop">Twitter news</a></li>
+									</ul>
+								</li>
+								<li><a class="gn-icon gn-icon-cog">Portfolio</a></li>
+								<li><a class="gn-icon gn-icon-help">more..</a></li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Blog</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-article">Topic 1</a></li>
+										<li><a class="gn-icon gn-icon-pictures">Topic 2</a></li>
+										<li><a class="gn-icon gn-icon-videos">Topic 3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a href="http://www.davirlein.com/portfolios">Portfolio</a></li>
+				<li><a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/HeaderEffects/"><span>About me</span></a></li>
+				<li><a class="codrops-icon codrops-icon-drop" href="http://www.davirlein.com/blogs"><span>Blog</span></a></li>
+			</ul>
+		</div><!-- /container -->
