@@ -88,6 +88,11 @@ ul.main-nav > li ul.sub-menu-lists > li {
 ul.main-nav > li ul.sub-menu-lists > li > a {
   font-size: 14px;
 }
+ul.main-nav > li ul.sub-menu-lists > li.twitter-link > a {
+  font-size: 16px;
+  list-style: none;
+  color: #1b95e0;
+}
 
 .ic {
   position: fixed; 
